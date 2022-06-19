@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Playfair+Display:ital,wght@1,500&display=swap');
+:root {
+    --main-bg-color: brown;
+  }
+*{
+    padding:0;
+    margin:0
+}
+header{
+   
+    background: var(--main-bg-color);
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+
+nav{
+    display: flex;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+.logo img{
+    width:88px;
+    padding:0 25px;
+
+}
+nav ul{
+    height:58px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    padding: 0px 23px;
+  
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;/*link ki line hata ne ke liye decoration none krtey hai*/
+
+}
+nav ul li a:hover{
+    color:pink;
+ font-weight: bolder;
+
+}
+.search{
+    display: flex;
+    align-items: center;
+    
+}
+.serach button{
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 900;
+
+}
+.search input{
+    width:30vw;
+    height:27px;
+    margin:0 12px;
+    border-radius: 5px;
+    margin:0 16px 0 56px;
+    padding:0 12px;
+
+}
+.slider{
+overflow :hidden;
+
+    width:80vw;
+    margin: 12px auto;
+}
+.card{
+   
+    max-width: 91vw;
+    margin:  37px auto;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.cards{
+     display: flex;
+
+   /*align-items:center ;
+   justify-content: center; */
+overflow: hidden;
+}
+.card-item{
+    display: inline-flex;
+    justify-content: center;
+    flex-direction: column;
+    margin:0  15px;
+}
+.card h2{
+    font-family: 'Baloo Bhaina 2', cursive;
+
+}
+.container{
+    min-height: calc(100vh - 58px - 12vh);
+}
+
+footer{
+   height:12vh;
+    background-color:  var(--main-bg-color);
+    color:white;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
